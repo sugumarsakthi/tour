@@ -1,0 +1,26 @@
+.login-container{
+    background-image: url(../../assets/images/login_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    .login-box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .login-box{
+            width: 300px;
+            height: 330px;
+            background-color: rgba(255,255,255,0.7);
+            padding: 16px;
+            ::ng-deep .mat-mdc-form-field{
+                width: 100%;
+            }
+            ::ng-deep .mdc-button{
+                background-color: rgb(113, 44, 249);
+                color: #fff;
+            }
+        }
+    }   
+}
