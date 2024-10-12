@@ -1,0 +1,15 @@
+.cart-container{
+    padding-top: 48px;
+    background-color: #f1efef;
+    height: calc(100% - 76px);
+    .cart-empty-card{
+        background-color: #ffffff !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 60%;
+        margin: auto;
+    }
+}

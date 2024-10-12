@@ -9,9 +9,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonComponent } from './person/person.component';
+import { CartComponent } from './cart/cart.component';
+import { SuccessComponent } from './shared/success/success.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,9 @@ import { PersonComponent } from './person/person.component';
     LoginComponent,
     HomeComponent,
     HeaderComponent,
-    PersonComponent
+    PersonComponent,
+    CartComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +36,12 @@ import { PersonComponent } from './person/person.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    MatButtonModule
-
+    MatButtonModule,
+    FormsModule,
+    MatCardModule,
+    MatTableModule,
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
