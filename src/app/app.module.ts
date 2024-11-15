@@ -18,7 +18,7 @@ import { HeaderComponent } from './header/header.component';
 import { PersonComponent } from './person/person.component';
 import { CartComponent } from './cart/cart.component';
 import { SuccessComponent } from './shared/success/success.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +41,8 @@ import { SuccessComponent } from './shared/success/success.component';
     MatCardModule,
     MatTableModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

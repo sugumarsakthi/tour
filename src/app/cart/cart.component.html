@@ -1,5 +1,23 @@
 <div class="cart-container">
-    <mat-card class="cart-empty-card" appearance="outlined">
-        <h1>Card is empty</h1>        
-    </mat-card>
+    <ng-container *ngIf="productListOnly.length == 0">
+        <mat-card class="cart-empty-card" appearance="outlined">
+            <h1>Card is empty</h1>        
+        </mat-card>
+    </ng-container>
+    <div class="row m-0">
+        <div *ngFor="let productLists of productListOnly" class="col-4">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{productLists.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        {{productLists.description}}
+                    </p>
+                    <p><span>Rating: {{productLists.rating}}<b></b></span></p>
+                    <p><span>Price: {{productLists.price}}<b></b></span></p>
+                  </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
 </div>
